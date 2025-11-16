@@ -1,12 +1,13 @@
 import Products from "../../products.js"
-
+import { SCHEMA_FEATURED } from "../../schema.js"
 export default function FeaturedKits(params) {
+    const content = SCHEMA_FEATURED.en
     return(
           <section className="featured-kits">
         <div className="container">
             <div className="section-header">
-                <h2>Our Featured Fermentation Kits</h2>
-                <p>Everything you need to start your fermentation journey with confidence</p>
+                <h2> {content.title} </h2>
+                <p> {content.subtitle} </p>
             </div>
             <div className="kits-grid">
                 {/* <!-- Kombucha Kit --> */}

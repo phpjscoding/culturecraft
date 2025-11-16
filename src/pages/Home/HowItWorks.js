@@ -1,40 +1,23 @@
+ import { SCHEMA_HOW_IT_WORKS } from "../../schema.js"
+
 export default function HowItWorks(params) {
+    const content = SCHEMA_HOW_IT_WORKS.en
     return(
           <section className="how-it-works">
         <div className="container">
             <div className="section-header">
-                <h2>How It Works</h2>
-                <p>Start fermenting in just a few simple steps</p>
+                <h2> {content.title} </h2>
+                <p>{content.subtitle}</p>
             </div>
             <div className="steps">
-                <div className="step">
+                {content.steps.map(step=>  <div className="step">
                     <div className="step-icon">
-                        <i className="fas fa-box-open"></i>
+                        <i className={step.icon}></i>
                     </div>
-                    <h3>1. Choose Your Kit</h3>
-                    <p>Select from our beginner-friendly kits designed for your fermentation goals.</p>
-                </div>
-                <div className="step">
-                    <div className="step-icon">
-                        <i className="fas fa-blender"></i>
-                    </div>
-                    <h3>2. Prepare Ingredients</h3>
-                    <p>Follow our simple recipes using fresh, organic ingredients included in your kit.</p>
-                </div>
-                <div className="step">
-                    <div className="step-icon">
-                        <i className="fas fa-hourglass-half"></i>
-                    </div>
-                    <h3>3. Let Nature Work</h3>
-                    <p>Store at room temperature and watch beneficial bacteria transform your food.</p>
-                </div>
-                <div className="step">
-                    <div className="step-icon">
-                        <i className="fas fa-utensils"></i>
-                    </div>
-                    <h3>4. Enjoy & Share</h3>
-                    <p>Taste, refine, and share your homemade probiotic creations with friends and family.</p>
-                </div>
+                    <h3> {step.number}. {step.title} </h3>
+                    <p>{step.description}</p>
+                </div>)}
+              
             </div>
         </div>
     </section>

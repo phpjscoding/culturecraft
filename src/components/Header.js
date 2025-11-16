@@ -1,10 +1,11 @@
 import { Link } from "react-router-dom"
 
-
+import { SCHEMA_MENU } from "../schema.js"
 export default function Header(params) {
+    const menu = SCHEMA_MENU.en
     return   (
          <header>
-        <div className="container header-inner">
+       <div className="container header-inner">
             <div className="logo">
                 Culture<span>Craft</span>
             </div>
@@ -13,12 +14,11 @@ export default function Header(params) {
             </button>
             <nav>
                 <ul>
-                    <li><Link to="/">Home</Link></li>
-                    <li><Link to="/kits">Kits</Link></li>
-                    <li><Link to="/supplies">Supplies</Link></li>
-                    <li><Link to="/learn">Learn</Link></li>
-                    <li><Link to="/about">About</Link></li>
-                    <li><Link to="/contact">Contact</Link></li>
+                     {menu.links.map((link) => <li key={link.id} >
+                        <Link to={link.path}> 
+                         {link.name}
+                      </Link></li>)}
+                  
                     {/* <li><Link to="/" className="nav-cta">Shop Kits</Link></li> */}
                 </ul>
             </nav>
