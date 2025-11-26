@@ -958,3 +958,446 @@ export const SCHEMA_RESOURCES = {
   }
 };
 
+// constants/footerSchema.js
+export const SCHEMA_FOOTER = {
+  en: {
+    company: {
+      heading: "CultureCraft",
+      bio: "Your trusted source for premium fermentation kits and supplies. Transform ordinary ingredients into extraordinary probiotic foods."
+    },
+    links: {
+      shop: {
+        heading: "Shop",
+        items: [
+          { id: "all-kits", text: "All Kits", path: "/kits" },
+          { id: "kombucha", text: "Kombucha", path: "/kits/kombucha" },
+          { id: "vegetables", text: "Vegetables", path: "/kits/vegetables" },
+          { id: "sourdough", text: "Sourdough", path: "/kits/sourdough" },
+          { id: "supplies", text: "Supplies", path: "/supplies" },
+          { id: "gift-cards", text: "Gift Cards", path: "/gift-cards" }
+        ]
+      },
+      learn: {
+        heading: "Learn",
+        items: [
+          { id: "blog", text: "Blog", path: "/blog" },
+          { id: "recipes", text: "Recipes", path: "/recipes" },
+          { id: "beginner-guides", text: "Beginner Guides", path: "/guides/beginner" },
+          { id: "troubleshooting", text: "Troubleshooting", path: "/troubleshooting" },
+          { id: "video-tutorials", text: "Video Tutorials", path: "/videos" },
+          { id: "faq", text: "FAQ", path: "/faq" }
+        ]
+      },
+      company: {
+        heading: "Company",
+        items: [
+          { id: "about-us", text: "About Us", path: "/about" },
+          { id: "our-story", text: "Our Story", path: "/about/story" },
+          { id: "sustainability", text: "Sustainability", path: "/sustainability" },
+          { id: "wholesale", text: "Wholesale", path: "/wholesale" },
+          { id: "careers", text: "Careers", path: "/careers" },
+          { id: "contact", text: "Contact", path: "/contact" }
+        ]
+      }
+    },
+    social: {
+      heading: "Follow Us",
+      platforms: [
+        { id: "instagram", name: "Instagram", icon: "fab fa-instagram", path: "https://instagram.com/culturecraft" },
+        { id: "facebook", name: "Facebook", icon: "fab fa-facebook-f", path: "https://facebook.com/culturecraft" },
+        { id: "youtube", name: "YouTube", icon: "fab fa-youtube", path: "https://youtube.com/culturecraft" },
+        { id: "pinterest", name: "Pinterest", icon: "fab fa-pinterest", path: "https://pinterest.com/culturecraft" }
+      ]
+    },
+    legal: {
+      copyright: "© 2025 CultureCraft. All rights reserved.",
+      links: [
+        { id: "privacy", text: "Privacy Policy", path: "/privacy" },
+        { id: "terms", text: "Terms of Service", path: "/terms" },
+        { id: "shipping", text: "Shipping Policy", path: "/shipping" },
+        { id: "refunds", text: "Refund Policy", path: "/refunds" }
+      ]
+    }
+  },
+  fr: {
+    company: {
+      heading: "CultureCraft",
+      bio: "Votre source de confiance pour des kits et fournitures de fermentation premium. Transformez des ingrédients ordinaires en aliments probiotiques extraordinaires."
+    },
+    links: {
+      shop: {
+        heading: "Boutique",
+        items: [
+          { id: "all-kits", text: "Tous les Kits", path: "/kits" },
+          { id: "kombucha", text: "Kombucha", path: "/kits/kombucha" },
+          { id: "vegetables", text: "Légumes", path: "/kits/legumes" },
+          { id: "sourdough", text: "Pain au Levain", path: "/kits/levain" },
+          { id: "supplies", text: "Fournitures", path: "/fournitures" },
+          { id: "gift-cards", text: "Cartes Cadeaux", path: "/cartes-cadeaux" }
+        ]
+      },
+      learn: {
+        heading: "Apprendre",
+        items: [
+          { id: "blog", text: "Blog", path: "/blog" },
+          { id: "recipes", text: "Recettes", path: "/recettes" },
+          { id: "beginner-guides", text: "Guides Débutant", path: "/guides/debutant" },
+          { id: "troubleshooting", text: "Dépannage", path: "/depannage" },
+          { id: "video-tutorials", text: "Tutoriels Vidéo", path: "/videos" },
+          { id: "faq", text: "FAQ", path: "/faq" }
+        ]
+      },
+      company: {
+        heading: "Entreprise",
+        items: [
+          { id: "about-us", text: "À Propos", path: "/a-propos" },
+          { id: "our-story", text: "Notre Histoire", path: "/a-propos/histoire" },
+          { id: "sustainability", text: "Durabilité", path: "/durabilite" },
+          { id: "wholesale", text: "Vente en Gros", path: "/vente-en-gros" },
+          { id: "careers", text: "Carrières", path: "/carrieres" },
+          { id: "contact", text: "Contact", path: "/contact" }
+        ]
+      }
+    },
+    social: {
+      heading: "Suivez-nous",
+      platforms: [
+        { id: "instagram", name: "Instagram", icon: "fab fa-instagram", path: "https://instagram.com/culturecraft" },
+        { id: "facebook", name: "Facebook", icon: "fab fa-facebook-f", path: "https://facebook.com/culturecraft" },
+        { id: "youtube", name: "YouTube", icon: "fab fa-youtube", path: "https://youtube.com/culturecraft" },
+        { id: "pinterest", name: "Pinterest", icon: "fab fa-pinterest", path: "https://pinterest.com/culturecraft" }
+      ]
+    },
+    legal: {
+      copyright: "© 2025 CultureCraft. Tous droits réservés.",
+      links: [
+        { id: "privacy", text: "Politique de Confidentialité", path: "/confidentialite" },
+        { id: "terms", text: "Conditions d'Utilisation", path: "/conditions" },
+        { id: "shipping", text: "Politique d'Expédition", path: "/expedition" },
+        { id: "refunds", text: "Politique de Remboursement", path: "/remboursement" }
+      ]
+    }
+  },
+  ar: {
+    company: {
+      heading: "كالتشر كرافت",
+      bio: "مصدرك الموثوق لمجموعات ومستلزمات التخمير الفاخرة. حول المكونات العادية إلى أطعمة بروبيوتيك استثنائية."
+    },
+    links: {
+      shop: {
+        heading: "تسوق",
+        items: [
+          { id: "all-kits", text: "جميع المجموعات", path: "/kits" },
+          { id: "kombucha", text: "الكمبوتشا", path: "/kits/kombucha" },
+          { id: "vegetables", text: "الخضروات", path: "/kits/vegetables" },
+          { id: "sourdough", text: "العجينة المخمرة", path: "/kits/sourdough" },
+          { id: "supplies", text: "المستلزمات", path: "/supplies" },
+          { id: "gift-cards", text: "بطاقات الهدايا", path: "/gift-cards" }
+        ]
+      },
+      learn: {
+        heading: "تعلم",
+        items: [
+          { id: "blog", text: "المدونة", path: "/blog" },
+          { id: "recipes", text: "الوصفات", path: "/recipes" },
+          { id: "beginner-guides", text: "دلائل المبتدئين", path: "/guides/beginner" },
+          { id: "troubleshooting", text: "استكشاف الأخطاء", path: "/troubleshooting" },
+          { id: "video-tutorials", text: "دروس الفيديو", path: "/videos" },
+          { id: "faq", text: "الأسئلة الشائعة", path: "/faq" }
+        ]
+      },
+      company: {
+        heading: "الشركة",
+        items: [
+          { id: "about-us", text: "من نحن", path: "/about" },
+          { id: "our-story", text: "قصتنا", path: "/about/story" },
+          { id: "sustainability", text: "الاستدامة", path: "/sustainability" },
+          { id: "wholesale", text: "البيع بالجملة", path: "/wholesale" },
+          { id: "careers", text: "الوظائف", path: "/careers" },
+          { id: "contact", text: "اتصل بنا", path: "/contact" }
+        ]
+      }
+    },
+    social: {
+      heading: "تابعنا",
+      platforms: [
+        { id: "instagram", name: "إنستغرام", icon: "fab fa-instagram", path: "https://instagram.com/culturecraft" },
+        { id: "facebook", name: "فيسبوك", icon: "fab fa-facebook-f", path: "https://facebook.com/culturecraft" },
+        { id: "youtube", name: "يوتيوب", icon: "fab fa-youtube", path: "https://youtube.com/culturecraft" },
+        { id: "pinterest", name: "بينتيريست", icon: "fab fa-pinterest", path: "https://pinterest.com/culturecraft" }
+      ]
+    },
+    legal: {
+      copyright: "© 2025 كالتشر كرافت. جميع الحقوق محفوظة.",
+      links: [
+        { id: "privacy", text: "سياسة الخصوصية", path: "/privacy" },
+        { id: "terms", text: "شروط الخدمة", path: "/terms" },
+        { id: "shipping", text: "سياسة الشحن", path: "/shipping" },
+        { id: "refunds", text: "سياسة الاسترجاع", path: "/refunds" }
+      ]
+    }
+  },
+  es: {
+    company: {
+      heading: "CultureCraft",
+      bio: "Tu fuente confiable de kits y suministros de fermentación premium. Transforma ingredientes ordinarios en alimentos probióticos extraordinarios."
+    },
+    links: {
+      shop: {
+        heading: "Tienda",
+        items: [
+          { id: "all-kits", text: "Todos los Kits", path: "/kits" },
+          { id: "kombucha", text: "Kombucha", path: "/kits/kombucha" },
+          { id: "vegetables", text: "Vegetales", path: "/kits/vegetales" },
+          { id: "sourdough", text: "Masa Madre", path: "/kits/masa-madre" },
+          { id: "supplies", text: "Suministros", path: "/suministros" },
+          { id: "gift-cards", text: "Tarjetas de Regalo", path: "/tarjetas-regalo" }
+        ]
+      },
+      learn: {
+        heading: "Aprender",
+        items: [
+          { id: "blog", text: "Blog", path: "/blog" },
+          { id: "recipes", text: "Recetas", path: "/recetas" },
+          { id: "beginner-guides", text: "Guías para Principiantes", path: "/guias/principiantes" },
+          { id: "troubleshooting", text: "Solución de Problemas", path: "/solucion-problemas" },
+          { id: "video-tutorials", text: "Tutoriales en Video", path: "/videos" },
+          { id: "faq", text: "Preguntas Frecuentes", path: "/preguntas-frecuentes" }
+        ]
+      },
+      company: {
+        heading: "Empresa",
+        items: [
+          { id: "about-us", text: "Sobre Nosotros", path: "/sobre-nosotros" },
+          { id: "our-story", text: "Nuestra Historia", path: "/sobre-nosotros/historia" },
+          { id: "sustainability", text: "Sostenibilidad", path: "/sostenibilidad" },
+          { id: "wholesale", text: "Venta al por Mayor", path: "/venta-mayor" },
+          { id: "careers", text: "Carreras", path: "/carreras" },
+          { id: "contact", text: "Contacto", path: "/contacto" }
+        ]
+      }
+    },
+    social: {
+      heading: "Síguenos",
+      platforms: [
+        { id: "instagram", name: "Instagram", icon: "fab fa-instagram", path: "https://instagram.com/culturecraft" },
+        { id: "facebook", name: "Facebook", icon: "fab fa-facebook-f", path: "https://facebook.com/culturecraft" },
+        { id: "youtube", name: "YouTube", icon: "fab fa-youtube", path: "https://youtube.com/culturecraft" },
+        { id: "pinterest", name: "Pinterest", icon: "fab fa-pinterest", path: "https://pinterest.com/culturecraft" }
+      ]
+    },
+    legal: {
+      copyright: "© 2025 CultureCraft. Todos los derechos reservados.",
+      links: [
+        { id: "privacy", text: "Política de Privacidad", path: "/privacidad" },
+        { id: "terms", text: "Términos de Servicio", path: "/terminos" },
+        { id: "shipping", text: "Política de Envío", path: "/envio" },
+        { id: "refunds", text: "Política de Reembolsos", path: "/reembolsos" }
+      ]
+    }
+  },
+  de: {
+    company: {
+      heading: "CultureCraft",
+      bio: "Ihre vertrauenswürdige Quelle für Premium-Fermentationssets und Zubehör. Verwandeln Sie gewöhnliche Zutaten in außergewöhnliche probiotische Lebensmittel."
+    },
+    links: {
+      shop: {
+        heading: "Shop",
+        items: [
+          { id: "all-kits", text: "Alle Kits", path: "/kits" },
+          { id: "kombucha", text: "Kombucha", path: "/kits/kombucha" },
+          { id: "vegetables", text: "Gemüse", path: "/kits/gemuese" },
+          { id: "sourdough", text: "Sauerteig", path: "/kits/sauerteig" },
+          { id: "supplies", text: "Zubehör", path: "/zubehoer" },
+          { id: "gift-cards", text: "Geschenkkarten", path: "/geschenkkarten" }
+        ]
+      },
+      learn: {
+        heading: "Lernen",
+        items: [
+          { id: "blog", text: "Blog", path: "/blog" },
+          { id: "recipes", text: "Rezepte", path: "/rezepte" },
+          { id: "beginner-guides", text: "Anfängerleitfäden", path: "/anleitungen/anfaenger" },
+          { id: "troubleshooting", text: "Fehlerbehebung", path: "/fehlerbehebung" },
+          { id: "video-tutorials", text: "Video-Tutorials", path: "/videos" },
+          { id: "faq", text: "FAQ", path: "/faq" }
+        ]
+      },
+      company: {
+        heading: "Unternehmen",
+        items: [
+          { id: "about-us", text: "Über Uns", path: "/ueber-uns" },
+          { id: "our-story", text: "Unsere Geschichte", path: "/ueber-uns/geschichte" },
+          { id: "sustainability", text: "Nachhaltigkeit", path: "/nachhaltigkeit" },
+          { id: "wholesale", text: "Großhandel", path: "/grosshandel" },
+          { id: "careers", text: "Karriere", path: "/karriere" },
+          { id: "contact", text: "Kontakt", path: "/kontakt" }
+        ]
+      }
+    },
+    social: {
+      heading: "Folgen Sie Uns",
+      platforms: [
+        { id: "instagram", name: "Instagram", icon: "fab fa-instagram", path: "https://instagram.com/culturecraft" },
+        { id: "facebook", name: "Facebook", icon: "fab fa-facebook-f", path: "https://facebook.com/culturecraft" },
+        { id: "youtube", name: "YouTube", icon: "fab fa-youtube", path: "https://youtube.com/culturecraft" },
+        { id: "pinterest", name: "Pinterest", icon: "fab fa-pinterest", path: "https://pinterest.com/culturecraft" }
+      ]
+    },
+    legal: {
+      copyright: "© 2025 CultureCraft. Alle Rechte vorbehalten.",
+      links: [
+        { id: "privacy", text: "Datenschutzrichtlinie", path: "/datenschutz" },
+        { id: "terms", text: "Nutzungsbedingungen", path: "/nutzungsbedingungen" },
+        { id: "shipping", text: "Versandrichtlinie", path: "/versand" },
+        { id: "refunds", text: "Rückgaberecht", path: "/rueckgabe" }
+      ]
+    }
+  }
+};
+
+// constants/trustBadgesSchema.js
+export const SCHEMA_TRUST_BADGES = {
+  en: {
+    badges: [
+      {
+        id: 'secure-payments',
+        icon: 'fas fa-shield-alt',
+        title: 'Secure Payments',
+        description: 'Encrypted & secure payment processing'
+      },
+      {
+        id: 'free-shipping',
+        icon: 'fas fa-truck',
+        title: 'Free Shipping Over $75',
+        description: 'Free shipping on all orders over $75'
+      },
+      {
+        id: 'returns',
+        icon: 'fas fa-undo',
+        title: '30-Day Returns',
+        description: 'Hassle-free 30-day return policy'
+      },
+      {
+        id: 'satisfaction',
+        icon: 'fas fa-award',
+        title: 'Satisfaction Guarantee',
+        description: '100% satisfaction guaranteed'
+      }
+    ]
+  },
+  fr: {
+    badges: [
+      {
+        id: 'secure-payments',
+        icon: 'fas fa-shield-alt',
+        title: 'Paiements Sécurisés',
+        description: 'Traitement de paiement crypté et sécurisé'
+      },
+      {
+        id: 'free-shipping',
+        icon: 'fas fa-truck',
+        title: 'Livraison Gratuite +75$',
+        description: 'Livraison gratuite sur toutes les commandes de plus de 75$'
+      },
+      {
+        id: 'returns',
+        icon: 'fas fa-undo',
+        title: 'Retours 30 Jours',
+        description: 'Politique de retour sans tracas de 30 jours'
+      },
+      {
+        id: 'satisfaction',
+        icon: 'fas fa-award',
+        title: 'Garantie Satisfaction',
+        description: 'Satisfaction garantie à 100%'
+      }
+    ]
+  },
+  ar: {
+    badges: [
+      {
+        id: 'secure-payments',
+        icon: 'fas fa-shield-alt',
+        title: 'مدفوعات آمنة',
+        description: 'معالجة مدفوعات مشفرة وآمنة'
+      },
+      {
+        id: 'free-shipping',
+        icon: 'fas fa-truck',
+        title: 'شحن مجاني فوق 75$',
+        description: 'شحن مجاني على جميع الطلبات فوق 75 دولارًا'
+      },
+      {
+        id: 'returns',
+        icon: 'fas fa-undo',
+        title: 'إرجاع 30 يوم',
+        description: 'سياسة إرجاع لمدة 30 يومًا خالية من المتاعب'
+      },
+      {
+        id: 'satisfaction',
+        icon: 'fas fa-award',
+        title: 'ضمان الرضا',
+        description: 'رضا مضمون 100%'
+      }
+    ]
+  },
+  es: {
+    badges: [
+      {
+        id: 'secure-payments',
+        icon: 'fas fa-shield-alt',
+        title: 'Pagos Seguros',
+        description: 'Procesamiento de pagos encriptado y seguro'
+      },
+      {
+        id: 'free-shipping',
+        icon: 'fas fa-truck',
+        title: 'Envío Gratis +$75',
+        description: 'Envío gratis en todos los pedidos superiores a $75'
+      },
+      {
+        id: 'returns',
+        icon: 'fas fa-undo',
+        title: 'Devoluciones 30 Días',
+        description: 'Política de devolución sin complicaciones de 30 días'
+      },
+      {
+        id: 'satisfaction',
+        icon: 'fas fa-award',
+        title: 'Garantía de Satisfacción',
+        description: 'Satisfacción 100% garantizada'
+      }
+    ]
+  },
+  de: {
+    badges: [
+      {
+        id: 'secure-payments',
+        icon: 'fas fa-shield-alt',
+        title: 'Sichere Zahlungen',
+        description: 'Verschlüsselte und sichere Zahlungsabwicklung'
+      },
+      {
+        id: 'free-shipping',
+        icon: 'fas fa-truck',
+        title: 'Kostenloser Versand Über 75€',
+        description: 'Kostenloser Versand bei allen Bestellungen über 75€'
+      },
+      {
+        id: 'returns',
+        icon: 'fas fa-undo',
+        title: '30-Tage-Rückgabe',
+        description: 'Problemlose 30-tägige Rückgaberecht'
+      },
+      {
+        id: 'satisfaction',
+        icon: 'fas fa-award',
+        title: 'Zufriedenheitsgarantie',
+        description: '100% Zufriedenheit garantiert'
+      }
+    ]
+  }
+};
+

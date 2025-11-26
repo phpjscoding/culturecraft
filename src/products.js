@@ -1,5 +1,6 @@
-export default function Products(){
-  return [
+export default function Products(params) {
+  return(
+     [
   {
     "id": 1,
     "title": "Artisan Sourdough Bread Kit",
@@ -521,4 +522,5 @@ export default function Products(){
     "image": "/images/kits/master-set.jpg"
   }
 ]
-}
+  )
+};

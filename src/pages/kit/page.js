@@ -1,6 +1,9 @@
 import "./kit.css"
+import ProductsWithPagination from "../../components/ProductsWithPagination"
 
 export default function Kit(params) {
+   
+
     return(
         <>
 
@@ -124,198 +127,10 @@ export default function Kit(params) {
                 </div>
             </aside>
 
-            <div className="kits-grid">
-                <div className="kit-card">
-                    <div className="kit-image">
-                        <i className="fas fa-wine-bottle"></i>
-                        <span className="kit-badge">Best Seller</span>
-                    </div>
-                    <div className="kit-content">
-                        <h3>Premium Kombucha Starter Kit</h3>
-                        <p>Complete organic kit with live SCOBY, premium tea blend, glass fermentation jar, and pH strips.</p>
-                        <div className="kit-meta">
-                            <div className="kit-rating">
-                                <i className="fas fa-star"></i>
-                                <i className="fas fa-star"></i>
-                                <i className="fas fa-star"></i>
-                                <i className="fas fa-star"></i>
-                                <i className="fas fa-star"></i>
-                                <span style={{color: '#888', marginLeft: '0.25rem'}}>(247)</span>
-                            </div>
-                            <span>Beginner</span>
-                        </div>
-                        <div className="kit-price">$69.99 <span className="price-old">$79.99</span></div>
-                        <a href="#" className="btn">Add to Cart</a>
-                    </div>
-                </div>
-
-                <div className="kit-card">
-                    <div className="kit-image">
-                        <i className="fas fa-carrot"></i>
-                        <span className="kit-badge">New</span>
-                    </div>
-                    <div className="kit-content">
-                        <h3>Vegetable Fermentation Master Set</h3>
-                        <p>Ceramic crock, weights, airlocks, and 50+ recipes for sauerkraut, kimchi, pickles, and more.</p>
-                        <div className="kit-meta">
-                            <div className="kit-rating">
-                                <i className="fas fa-star"></i>
-                                <i className="fas fa-star"></i>
-                                <i className="fas fa-star"></i>
-                                <i className="fas fa-star"></i>
-                                <i className="fas fa-star-half-alt"></i>
-                                <span style={{color: '#888', marginLeft: '0.25rem'}}>(182)</span>
-                            </div>
-                            <span>Intermediate</span>  
-                        </div>
-                        <div className="kit-price">$89.99</div>
-                        <a href="#" className="btn">Add to Cart</a>
-                    </div>
-                </div>
-
-                <div className="kit-card">
-                    <div className="kit-image">
-                        <i className="fas fa-bread-slice"></i>
-                    </div>
-                    <div className="kit-content">
-                        <h3>Artisan Sourdough Bread Kit</h3>
-                        <p>100-year-old starter culture, proofing basket, lame, banneton, and comprehensive baking guide.</p>
-                        <div className="kit-meta">
-                            <div className="kit-rating">
-                                <i className="fas fa-star"></i>
-                                <i className="fas fa-star"></i>
-                                <i className="fas fa-star"></i>
-                                <i className="fas fa-star"></i>
-                                <i className="fas fa-star"></i>
-                                <span style={{color: '#888', marginLeft: '0.25rem'}}>(319)</span>
-                            </div>
-                            <span>Beginner</span>
-                        </div>
-                        <div className="kit-price">$74.99</div>
-                        <a href="#" className="btn">Add to Cart</a>
-                    </div>
-                </div>
-
-                <div className="kit-card">
-                    <div className="kit-image">
-                        <i className="fas fa-cheese"></i>
-                    </div>
-                    <div className="kit-content">
-                        <h3>Greek Yogurt & Kefir Starter Set</h3>
-                        <p>Live cultures, stainless steel strainer, thermometer, and recipes for creamy yogurt and fizzy kefir.</p>
-                        <div className="kit-meta">
-                            <div className="kit-rating">
-                                <i className="fas fa-star"></i>
-                                <i className="fas fa-star"></i>
-                                <i className="fas fa-star"></i>
-                                <i className="fas fa-star"></i>
-                                <i className="fas fa-star"></i>
-                                <span style={{color: '#888', marginLeft: '0.25rem'}}>(156)</span>
-                            </div>
-                            <span>Beginner</span>
-                        </div>
-                        <div className="kit-price">$54.99 <span className="price-old">$64.99</span></div>
-                        <a href="#" className="btn">Add to Cart</a>
-                    </div>
-                </div>
-
-                <div className="kit-card">
-                    <div className="kit-image">
-                        <i className="fas fa-pepper-hot"></i>
-                        <span className="kit-badge">Hot</span>
-                    </div>
-                    <div className="kit-content">
-                        <h3>Kimchi Making Complete Kit</h3>
-                        <p>Korean chili flakes, onggi-style jar, gloves, gochugaru, and authentic family recipes.</p>
-                        <div className="kit-meta">
-                            <div className="kit-rating">
-                                <i className="fas fa-star"></i>
-                                <i className="fas fa-star"></i>
-                                <i className="fas fa-star"></i>
-                                <i className="fas fa-star"></i>
-                                <i className="fas fa-star"></i>
-                                <span style={{color: '#888', marginLeft: '0.25rem'}}>(203)</span>
-                            </div>
-                            <span>Intermediate</span>
-                        </div>
-                        <div className="kit-price">$79.99</div>
-                        <a href="#" className="btn">Add to Cart</a>
-                    </div>
-                </div>
-
-                <div className="kit-card">
-                    <div className="kit-image">
-                        <i className="fas fa-flask"></i>
-                        <span className="kit-badge">Bundle</span>
-                    </div>
-                    <div className="kit-content">
-                        <h3>Ultimate Fermentation Bundle</h3>
-                        <p>All 5 starter kits + pH meter, digital scale, culture incubator, and lifetime recipe access.</p>
-                        <div className="kit-meta">
-                            <div className="kit-rating">
-                                <i className="fas fa-star"></i>
-                                <i className="fas fa-star"></i>
-                                <i className="fas fa-star"></i>
-                                <i className="fas fa-star"></i>
-                                <i className="fas fa-star"></i>
-                                <span style={{color: '#888', marginLeft: '0.25rem'}}>(89)</span>
-                            </div>
-                            <span>Advanced</span>
-                        </div>
-                        <div className="kit-price">$299.99 <span className="price-old">$399.99</span></div>
-                        <a href="#" className="btn">Add to Cart</a>
-                    </div>
-                </div>
-
-                <div className="kit-card">
-                    <div className="kit-image">
-                        <i className="fas fa-seedling"></i>
-                    </div>
-                    <div className="kit-content">
-                        <h3>Organic Pickle Making Kit</h3>
-                        <p>Heritage cucumber seeds, pickling spice blend, mason jars, and step-by-step guide.</p>
-                        <div className="kit-meta">
-                            <div className="kit-rating">
-                                <i className="fas fa-star"></i>
-                                <i className="fas fa-star"></i>
-                                <i className="fas fa-star"></i>
-                                <i className="fas fa-star"></i>
-                                <i className="fas fa-star-half-alt"></i>
-                                <span style={{color: '#888', marginLeft: '0.25rem'}}>(134)</span>
-                            </div>
-                            <span>Beginner</span>
-                        </div>
-                        <div className="kit-price">$44.99</div>
-                        <a href="#" className="btn">Add to Cart</a>
-                    </div>
-                </div>
-
-                <div className="kit-card">
-                    <div className="kit-image">
-                        <i className="fas fa-wine-glass-alt"></i>
-                    </div>
-                    <div className="kit-content">
-                        <h3>Water Kefir Starter Kit</h3>
-                        <p>Live water kefir grains, organic cane sugar, mineral-rich ingredients, and flavoring guide.</p>
-                        <div className="kit-meta">
-                            <div className="kit-rating">
-                                <i className="fas fa-star"></i>
-                                <i className="fas fa-star"></i>
-                                <i className="fas fa-star"></i>
-                                <i className="fas fa-star"></i>
-                                <i className="fas fa-star"></i>
-                                <span style={{color: '#888', marginLeft: '0.25rem'}}>(167)</span>
-                            </div>
-                            <span>Beginner</span>
-                        </div>
-                        <div className="kit-price">$49.99</div>
-                        <a href="#" className="btn">Add to Cart</a>
-                    </div>
-                </div>
-            </div>
+           <ProductsWithPagination />
         </div>
 
-        <div className="container">
+        {/* <div className="container"> 
             <div className="pagination">
                 <button className="page-btn" disabled>
                     <i className="fas fa-chevron-left"></i>
@@ -329,7 +144,7 @@ export default function Kit(params) {
                     <i className="fas fa-chevron-right"></i>
                 </button>
             </div>
-        </div>
+        </div> */}
     </section>
 
     <section className="kits-newsletter">
